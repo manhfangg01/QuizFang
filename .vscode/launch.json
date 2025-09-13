@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-QuizfangApplication<quizfang>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.quizfang.quizfang.QuizfangApplication",
+      "projectName": "quizfang",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
