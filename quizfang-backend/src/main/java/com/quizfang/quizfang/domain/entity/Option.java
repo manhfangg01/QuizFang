@@ -26,6 +26,7 @@ public class Option {
     private Boolean isCorrect;
     // media
     private String audio;
+    private String picture;
 
     // Relationship
     @ManyToOne
