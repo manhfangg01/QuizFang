@@ -13,7 +13,6 @@ import com.quizfang.quizfang.domain.dto.request.admin.option.CreateOptionRequest
 import com.quizfang.quizfang.domain.dto.request.admin.option.UpdateOptionRequest;
 import com.quizfang.quizfang.domain.dto.response.admin.option.FetchOptionResponse;
 import com.quizfang.quizfang.domain.entity.Option;
-import com.quizfang.quizfang.domain.entity.User;
 import com.quizfang.quizfang.repository.OptionRepository;
 import com.quizfang.quizfang.service.azure.AzureBlobService;
 import com.quizfang.quizfang.util.error.InvalidUploadedFile;
@@ -71,9 +70,6 @@ public class AdminOptionService {
                 List<String> allowedExtensions = List.of(".mp3", ".wav", ".ogg", ".m4a");
 
                 String fileName = audio.getOriginalFilename().toLowerCase();
-                String contentType = audio.getContentType();
-                // boolean validMime = contentType != null && contentType.startsWith("audio/");
-                // // Kiểm tra định dạng MINE
                 boolean validExt = allowedExtensions.stream().anyMatch(fileName::endsWith); // Kiểm tra phần mở rộng
                 if (!validExt) {
                     throw new InvalidUploadedFile(

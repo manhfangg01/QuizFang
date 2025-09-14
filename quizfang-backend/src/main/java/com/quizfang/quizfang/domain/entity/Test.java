@@ -49,6 +49,7 @@ public class Test {
     private TestDifficulty difficulty;
 
     // Media
+    private String picture;
     private String audio;
 
     // relationship
