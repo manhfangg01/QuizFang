@@ -1,9 +1,6 @@
 package com.quizfang.quizfang.domain.dto.request.admin.question;
 
 import java.util.List;
-
-import com.quizfang.quizfang.domain.dto.request.admin.option.CreateOptionRequest;
-import com.quizfang.quizfang.domain.dto.response.admin.option.FetchOptionResponse;
 import com.quizfang.quizfang.util.constant.QuestionSubtype;
 import com.quizfang.quizfang.util.constant.QuestionType;
 

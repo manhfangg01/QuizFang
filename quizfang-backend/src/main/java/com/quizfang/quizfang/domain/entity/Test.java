@@ -48,7 +48,6 @@ public class Test {
     @Enumerated(EnumType.STRING)
     private TestDifficulty difficulty;
 
-    // Media
     private String picture;
     private String audio;
 
@@ -57,7 +56,6 @@ public class Test {
     @JoinTable(name = "test_question", joinColumns = @JoinColumn(name = "test_id"), inverseJoinColumns = @JoinColumn(name = "ques_id"))
     private List<Question> questions; // Bên test là owner do test quản lý nhiều câu hỏi
                                       // Còn câu hỏi muốn biết mình thuộc tets nào thì phải tham chiếu lại
-
     @OneToMany(mappedBy = "test")
     private List<Result> results;
 }

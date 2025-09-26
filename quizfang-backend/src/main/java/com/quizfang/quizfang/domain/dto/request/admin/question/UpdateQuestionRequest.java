@@ -2,7 +2,6 @@ package com.quizfang.quizfang.domain.dto.request.admin.question;
 
 import java.util.List;
 
-import com.quizfang.quizfang.domain.dto.request.admin.option.UpdateOptionRequest;
 import com.quizfang.quizfang.util.constant.QuestionSubtype;
 import com.quizfang.quizfang.util.constant.QuestionType;
 

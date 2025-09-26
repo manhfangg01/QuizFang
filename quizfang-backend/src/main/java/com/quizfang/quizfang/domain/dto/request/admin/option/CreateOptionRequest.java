@@ -22,6 +22,7 @@ public class CreateOptionRequest {
     private String audio; // optional
     private String picture; // optional
 
-    @NotNull(message = "Question ID is required")
+    // @NotNull(message = "Question ID is required")
+    // Optional do có thể tạo trước rồi thêm questionId
     private Long questionId;
 }
