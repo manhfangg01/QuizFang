@@ -1,0 +1,40 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    padding: 0 20px;
+
+    .logo {
+      display: inline-block;
+
+      img {
+        width: 190px;
+        height: auto;
+        display: block;
+        transition: width 0.3s ease; // transition mượt khi resize
+      }
+    }
+  }
+
+  // Media query responsive
+  @media (max-width: 968px) {
+    .logo-container {
+      padding: 0;
+
+      .logo img {
+        width: 100px;
+      }
+    }
+  }
+}
