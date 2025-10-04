@@ -1,0 +1,62 @@
+html {
+  font-size: 16px;
+
+  .menu {
+    background-color: #294563 !important; // set màu nền navbar
+    padding: 0;
+    .menu-container {
+      .menu-item {
+        &:hover,
+        &:focus {
+          background-color: #a1b1c3 !important;
+          color: #1c1b19 !important; // ví dụ hover sang vàng
+        }
+      }
+      .navbar-nav {
+        margin: 0 auto;
+        // Tất cả nav link & dropdown link màu trắng
+        .nav-item,
+        nav-link {
+          padding: 5px 0;
+        }
+
+        .nav-item {
+          &:hover {
+            background-color: #a1b1c3;
+          }
+        }
+        .nav-link {
+          display: flex;
+          align-items: center;
+        }
+        .nav-link,
+        .dropdown-toggle {
+          color: white !important;
+          font-weight: 600;
+
+          &:hover,
+          &:focus {
+            color: #1c1b19 !important; // ví dụ hover sang vàng
+          }
+        }
+        .dropdown-menu {
+          background-color: #294563;
+          top: 95%;
+          border-radius: 0 !important;
+        }
+
+        .nav-logo {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          color: white !important;
+        }
+
+        // Ẩn mũi tên caret
+        .no-caret .dropdown-toggle::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

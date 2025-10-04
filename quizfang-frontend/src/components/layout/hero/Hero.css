@@ -1,0 +1,42 @@
+.hero-slider {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: #f5f5f5;
+  height: 500px; /* đảm bảo slide không bị co nhỏ */
+  border-radius: 10px;
+}
+
+.slide-content .text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.slide-content .text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.slide-content .text p {
+  font-size: 1.2rem;
+}
+
+.slide-content .image {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+  height: 300px;
+}
+
+.slide-content .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
